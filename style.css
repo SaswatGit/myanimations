@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+body{
+    width: 100%;
+    color: pink;
+    overflow-x: hidden;
+}
+.contaiener{
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+}
+#canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(black 60%, rgb(67, 47, 50));
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero{
+    font-size: 7rem;
+    letter-spacing: 3px;
+}
+#hero h1{
+    width: 90%;
+    text-align: left;
+    overflow: hidden;
+}
+#hero span{
+    display: inline-block;
+}
+@media screen and (max-width: 600px) {
+    #hero{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    #hero{
+        font-size: 3rem;
+    }
+}
+
+
+
+#letter-rotation{
+    font-size: 5rem;
+}
+
+#letter-rotation h1{
+    position: absolute;
+    letter-spacing: 10px;
+}
+#letter-rotation h1 span{
+    display: inline-block;
+}
+
+
+#pin-and-rotate{
+    font-size: 4rem;
+}
+@media screen and (max-width: 600px){
+    #pin-and-rotate{
+        font-size: 2rem;
+    }
+}
+
+
+#pin-and-zoom{
+    font-size: 1rem;
+}
+
+
+#pin-element{
+    height: auto;
+}
+.pin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    font-size: 5rem;
+    padding: 2rem;
+}
+.scroll{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.scroll p{
+    width: 50%;
+    text-align: justify;
+    font-size: 0.5rem;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:700px) {
+    .pin{
+        position: relative;
+        height: auto;
+        font-size: 3rem;
+    }
+    .scroll p{
+        width: 100%;
+    }
+}
+
+
+#text-split{
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+#text-split h1 span{
+    display: inline-block;
+}
+
+
+#cards .card{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border: 3px solid pink;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+
+#pin-and-scale{
+    overflow: hidden;
+}
+#pin-and-scale h1{
+    position: absolute;
+    padding: 1rem;
+    font-size: 6rem;
+    letter-spacing: 10px;
+}
+#pin-and-scale .middle{
+    font-size: 0.1rem;
+    opacity: 0;
+}
+#pin-and-scale .top{
+    top: 0;
+    left: 0;
+}
+#pin-and-scale .bottom{
+    bottom: 0;
+    right: 0;
+}
