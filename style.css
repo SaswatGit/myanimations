@@ -42,6 +42,11 @@ section{
     width: 90%;
     text-align: left;
     overflow: hidden;
+    position: relative;
+}
+
+#hero h1:nth-child(3){
+    color: white;
 }
 #hero span{
     display: inline-block;
@@ -57,20 +62,31 @@ section{
     }
 }
 
-
+#library p{
+    width: 60%;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: justify;
+}
+#library span{
+    color: white;
+}
 
 #letter-rotation{
     font-size: 5rem;
 }
 
 #letter-rotation h1{
-    position: absolute;
     letter-spacing: 10px;
 }
 #letter-rotation h1 span{
     display: inline-block;
 }
-
+@media screen and (max-width: 600px){
+    #letter-rotation{
+        font-size: 3rem;
+    }
+}
 
 #pin-and-rotate{
     font-size: 4rem;
@@ -162,6 +178,8 @@ section{
 #pin-and-scale .middle{
     font-size: 0.1rem;
     opacity: 0;
+    color: white;
+    letter-spacing: 0;
 }
 #pin-and-scale .top{
     top: 0;

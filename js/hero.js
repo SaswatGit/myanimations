@@ -4,3 +4,4 @@ gsap.from("#hero h1 span", 1, {yPercent: 100, stagger: 0.1, ease: "back", scroll
     end: "bottom center",
     toggleActions: "play reverse play reverse",
 }});
+gsap.to("#hero h1 .ani", 1, {rotationX: 360, stagger: 1, yoyo: true, repeat: -1, repeatDelay: 1});
